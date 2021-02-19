@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://djwccc.github.io/qpystudy/</id>
     <title>QPy教程</title>
-    <updated>2021-02-19T13:12:14.306Z</updated>
+    <updated>2021-02-19T13:22:00.696Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://djwccc.github.io/qpystudy/"/>
     <link rel="self" href="https://djwccc.github.io/qpystudy/atom.xml"/>
@@ -10,6 +10,25 @@
     <logo>https://djwccc.github.io/qpystudy/images/avatar.png</logo>
     <icon>https://djwccc.github.io/qpystudy/favicon.ico</icon>
     <rights>All rights reserved 2021, QPy教程</rights>
+    <entry>
+        <title type="html"><![CDATA[第一个python程序]]></title>
+        <id>https://djwccc.github.io/qpystudy/post/di-yi-ge-python-cheng-xu/</id>
+        <link href="https://djwccc.github.io/qpystudy/post/di-yi-ge-python-cheng-xu/">
+        </link>
+        <updated>2021-02-19T13:15:27.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="printhello-world">print(&quot;Hello, world!&quot;)</h1>
+<p>打开python自带的IDE，写入</p>
+<h3 id="printhello-world-2">print(&quot;Hello, world!&quot;)</h3>
+<p>然后，运行~<br>
+<img src="https://djwccc.github.io/qpystudy//post-images/1613740719755.png" alt="" loading="lazy"></p>
+<p>现在可以看到，你成功运行了第一行代码！</p>
+<p>同时，你还可以选择创建一个python文件进行编写<br>
+在python自带的IDE上方Files，点击New File</p>
+<p>你就可以创建一个python文件了</p>
+<p>python文件的后缀名都基本上是.py<br>
+有些是其他的后缀名</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[python下载]]></title>
         <id>https://djwccc.github.io/qpystudy/post/python-xia-zai/</id>
@@ -28,6 +47,7 @@
 cmd会弹出类似这样的文字<br>
 Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32<br>
 Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</p>
+<p>那么，恭喜你，成功安装python环境了。</p>
 ]]></content>
     </entry>
     <entry>
