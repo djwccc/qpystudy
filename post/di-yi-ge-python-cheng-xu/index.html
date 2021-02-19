@@ -1,67 +1,121 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>第一个python程序 | QPy教程</title>
-<link rel="shortcut icon" href="https://djwccc.github.io/qpystudy//favicon.ico?v=1613741014918">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<meta name="description" content="夫君子之行，code以修身，program以养德，非淡泊无以明志，非宁静无以致远。">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://djwccc.github.io/qpystudy//favicon.ico?v=1613741187323">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://djwccc.github.io/qpystudy//styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="第一个python程序 | QPy教程 - Atom Feed" href="https://djwccc.github.io/qpystudy//atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="print(&quot;Hello, world!&quot;)
-打开python自带的IDE，写入
-print(&quot;Hello, world!&quot;)
-然后，运行~
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
-现在可以看到，你成功运行了第一行代码！
-同时，你还可以选..." />
-    <meta name="keywords" content="" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://djwccc.github.io/qpystudy/">
-  <img class="avatar" src="https://djwccc.github.io/qpystudy//images/avatar.png?v=1613741014918" alt="">
-  </a>
-  <h1 class="site-title">
-    QPy教程
-  </h1>
-  <p class="site-description">
-    夫君子之行，code以修身，program以养德，非淡泊无以明志，非宁静无以致远。
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="https://djwccc.github.io/qpystudy/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="https://djwccc.github.io/qpystudy/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="https://djwccc.github.io/qpystudy/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="https://djwccc.github.io/qpystudy/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://djwccc.github.io/qpystudy/">
+        <img class="avatar" src="https://djwccc.github.io/qpystudy//images/avatar.png?v=1613741187323" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://djwccc.github.io/qpystudy/">
+        <h1 class="site-title">QPy教程</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="https://djwccc.github.io/qpystudy/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="https://djwccc.github.io/qpystudy/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="https://djwccc.github.io/qpystudy/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="https://djwccc.github.io/qpystudy/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">第一个python程序</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2021-02-19</span>
+            
+          </div>
+          <div class="post-content">
+            <h1 id="printhello-world">print(&quot;Hello, world!&quot;)</h1>
+<p>打开python自带的IDE，写入</p>
+<h3 id="printhello-world-2">print(&quot;Hello, world!&quot;)</h3>
+<p>然后，运行~<br>
+<img src="https://djwccc.github.io/qpystudy//post-images/1613740719755.png" alt="" loading="lazy"></p>
+<p>现在可以看到，你成功运行了第一行代码！</p>
+<p>同时，你还可以选择创建一个python文件进行编写<br>
+在python自带的IDE上方Files，点击New File</p>
+<p>你就可以创建一个python文件了</p>
+<p>python文件的后缀名都基本上是.py<br>
+有些是其他的后缀名</p>
+
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://djwccc.github.io/qpystudy/post/python-xia-zai/">
+              <h3 class="post-title">
+                下一篇：python下载
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">夫君子之行，code以修身，program以养德，非淡泊无以明志，非宁静无以致远。</div>
   <div class="social-container">
     
       
@@ -75,115 +129,26 @@ print(&quot;Hello, world!&quot;)
       
     
   </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://djwccc.github.io/qpystudy//atom.xml" target="_blank">RSS</a>
 </div>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              第一个python程序
-            </h2>
-            <div class="post-info">
-              <span>
-                2021-02-19
-              </span>
-              <span>
-                1 min read
-              </span>
-              
-            </div>
-            
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <h1 id="printhello-world">print(&quot;Hello, world!&quot;)</h1>
-<p>打开python自带的IDE，写入</p>
-<h3 id="printhello-world-2">print(&quot;Hello, world!&quot;)</h3>
-<p>然后，运行~<br>
-<img src="https://djwccc.github.io/qpystudy//post-images/1613740719755.png" alt="" loading="lazy"></p>
-<p>现在可以看到，你成功运行了第一行代码！</p>
-<p>同时，你还可以选择创建一个python文件进行编写<br>
-在python自带的IDE上方Files，点击New File</p>
-<p>你就可以创建一个python文件了</p>
-<p>python文件的后缀名都基本上是.py<br>
-有些是其他的后缀名</p>
 
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li><a href="#printhello-world">print(&quot;Hello, world!&quot;)</a><br>
-*
-<ul>
-<li><a href="#printhello-world-2">print(&quot;Hello, world!&quot;)</a></li>
-</ul>
-</li>
-</ul>
-
-              </div>
-            </div>
-          </article>
-        </div>
-
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://djwccc.github.io/qpystudy/post/python-xia-zai/">
-              <h3 class="post-title">
-                python下载
-              </h3>
-            </a>
-          </div>
-        
-
-        
-
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-  <a class="rss" href="https://djwccc.github.io/qpystudy//atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
-      </div>
     </div>
+    <script type="application/javascript">
 
-    <script>
-      hljs.initHighlightingOnLoad()
+hljs.initHighlightingOnLoad()
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
+</script>
 
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
 
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
 
-    </script>
+
   </body>
 </html>
