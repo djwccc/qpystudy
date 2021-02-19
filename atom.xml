@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://djwccc.github.io/qpystudy/</id>
     <title>QPy教程</title>
-    <updated>2021-02-19T12:47:06.915Z</updated>
+    <updated>2021-02-19T12:56:35.052Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://djwccc.github.io/qpystudy/"/>
     <link rel="self" href="https://djwccc.github.io/qpystudy/atom.xml"/>
@@ -17,6 +17,22 @@
         </link>
         <updated>2021-02-19T12:45:03.000Z</updated>
         <content type="html"><![CDATA[<p>官网下载  https://www.python.org/</p>
+<p>然而，Linux是本身自带python的环境的，所以Linux的用户就不用亲自到官网下载了</p>
+<p>安装python<br>
+勾选 Add python to PATH<br>
+点击Install Now<br>
+详细看https://blog.csdn.net/wx25051/article/details/105551000</p>
+<p>打开cmd<br>
+https://blog.csdn.net/qq_40413333/article/details/113564887</p>
+<p>输入 python<br>
+cmd会弹出类似这样的文字<br>
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32<br>
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</p>
+<blockquote>
+<blockquote>
+<blockquote></blockquote>
+</blockquote>
+</blockquote>
 ]]></content>
     </entry>
     <entry>
