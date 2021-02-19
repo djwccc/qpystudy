@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://qpystudy.com</id>
+    <id>https://djwccc.github.io/qpystudy/</id>
     <title>QPy教程</title>
-    <updated>2021-02-19T12:24:25.771Z</updated>
+    <updated>2021-02-19T12:39:46.582Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://qpystudy.com"/>
-    <link rel="self" href="https://qpystudy.com/atom.xml"/>
+    <link rel="alternate" href="https://djwccc.github.io/qpystudy/"/>
+    <link rel="self" href="https://djwccc.github.io/qpystudy/atom.xml"/>
     <subtitle>夫君子之行，code以修身，program以养德，非淡泊无以明志，非宁静无以致远。</subtitle>
-    <logo>https://qpystudy.com/images/avatar.png</logo>
-    <icon>https://qpystudy.com/favicon.ico</icon>
+    <logo>https://djwccc.github.io/qpystudy/images/avatar.png</logo>
+    <icon>https://djwccc.github.io/qpystudy/favicon.ico</icon>
     <rights>All rights reserved 2021, QPy教程</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://qpystudy.com/post/hello-gridea/</id>
-        <link href="https://qpystudy.com/post/hello-gridea/">
+        <id>https://djwccc.github.io/qpystudy/post/hello-gridea/</id>
+        <link href="https://djwccc.github.io/qpystudy/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
